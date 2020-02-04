@@ -74,6 +74,26 @@ Gastos para el desarrollo y mantenimiento de una página web.
 Inicialmente a través de publicidad y alianzas estratégicas con empresas o personas interesados en la idea y el alcance de la plataforma web, en un futuro se podría plantear cuota de membresía.
 
 ## 9.	Mockups de la aplicación
+### **Landing Page:** 
+>
+![landingPage](/mockups/LandingPage.png)
+![landingPage2](/mockups/LandingPage2.png)
+>
+### **Log In:** 
+>
+![singIn](/mockups/SingIn.png)
+>
+### **Pagina de busqueda:** 
+>
+![searchFilter](/mockups/Search-Filter.png)
+>
+### **Información del usuario:** 
+>
+![userinfo](/mockups/UserInfo.png)
+>
+### **Información del objeto:** 
+>
+![userinfo](/mockups/InfoObject.png)
 
 ## 10.	Descripción de la aplicación
 
