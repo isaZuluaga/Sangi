@@ -29,15 +29,15 @@ Esta aplicación plantea la posibilidad de intercambiar bienes de manera sencill
 La app funciona con una interfaz parecida la de Tinder, pero en este caso los usuarios, en lugar de personas, eligen aquellos productos que les gustan y aquellos que no hasta que se establece una coincidencia, o ‘match’, en el argot de la aplicación. Los productos se adaptan a las preferencias del usuario y a la geolocalización, favoreciendo el consumo colaborativo de proximidad y reduciendo la necesidad de grandes desplazamientos, ayudando así a reducir nuestra huella ecológica en el momento de adquirir productos.
 
 ***Truekeo.com:***
-Truekeo.com es un página social destinada a apoyar el trueque y el reuso. Truekeo.com nace de la idea de que las personas tengan una plataforma libre para poder intercambiar sus cosas, servicios y/o conocimientos a través de la web.
+Truekeo.com es un página social destinada a apoyar el trueque y el reuso. Truekeo.com nace de la idea de que las personas tengan una plataforma libre para poder intercambiar sus cosas a través de la web.
 
 Truekeo.com nació con la idea de crear algo para apoyar nuestra economía y ecología actual en México. Por ejemplo, mediante el trueque podemos reciclar nuestras cosas en buen estado he intercambiarlas por algo nuevo para nosotros, ayudando así a no contaminar tanto con desperdicios y dándole más vida útil a nuestras cosas.
 
 ***Trastillo:***
-Dentro de la categorí¬a de portales que nos permiten comprar y vender artí¬culos usados, nos presentan trastillo.es, un proyecto que usa el ingrediente «confianza» para diferenciarse de la competencia.
+Dentro de la categoría de portales que nos permiten comprar y vender artículos usados, nos presentan trastillo.es, un proyecto que usa el ingrediente «confianza» para diferenciarse de la competencia.
 
-La idea es crear una red social en la que podamos vender artí¬culos entre nuestros propios contactos, un lugar en el que sea sencillo presentar lo que queremos vender y no tengamos miedo a la hora de adquirir lo que allí¬ se presenta, ya que el objetivo principal es poder comercializar entre amigos y contactos, disminuyendo radicalmente el factor fraude.
-Podemos incluir artí¬culos de forma pública, aunque por defecto los artí¬culos solo se ven por los que forman parte de nuestra red y por sus contactos directos, de forma que podemos entrar en contacto con el amigo de un amigo y poder llegar a un acuerdo sobre lo que está siendo presentado.
+La idea es crear una red social en la que podamos vender artículos entre nuestros propios contactos, un lugar en el que sea sencillo presentar lo que queremos vender y no tengamos miedo a la hora de adquirir lo que allí se presenta, ya que el objetivo principal es poder comercializar entre amigos y contactos, disminuyendo radicalmente el factor fraude.
+Podemos incluir artículos de forma pública, aunque por defecto los artículos solo se ven por los que forman parte de nuestra red y por sus contactos directos, de forma que podemos entrar en contacto con el amigo de un amigo y poder llegar a un acuerdo sobre lo que está siendo presentado.
 
 Estas aplicaciones permiten realizar los trueques entre los usuarios, cada una ofrece algo un poco distinto lo cual las diferencia entre sí, con esta plataforma se quiere limitar los intercambios a una zona en específico y permitirles a los usuarios proponer servicios en caso de no tener objetos para el intercambio y de esta manera no limitar a los usuarios.
 
@@ -55,7 +55,8 @@ La solución consiste en desarrollar una plataforma web que permita el intercamb
 >
 ***Métricas clave:***
 La interacción de los usuarios con la página, sus opiniones acerca de la utilidad esta, el desempeño de la página y la cantidad de trueques exitosos realizados.
-Proposición de valor única:
+>
+***Proposición de valor única:***
 Con esta plataforma se quiere facilitar los trueques de objetos entre personas que ya no necesiten de estos, se busca también limitar los intercambios a una zona en específico para que sea más sencillo llevar acabo dichos intercambios y no se requieran de gastos por envíos, además se tendrá la posibilidad de permitirles a los usuarios proponer servicios en caso de no tener objetos para el intercambio y de esta manera no limitarlos.
 >
 ***Ventaja Especial:***
