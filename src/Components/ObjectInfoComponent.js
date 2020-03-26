@@ -19,8 +19,8 @@ const mainContent = (Props) =>{
             </p>
             <input type="porposeInput" id="porposeInputText" name="find"></input>
 
-            <button class="proposeButton">Solicitar Intercambio</button>
-            <button class="proposeButton">Mas del usuario</button>
+            <button class="objectInfoButton">Solicitar Intercambio</button>
+            <button class="objectInfoButton">Mas del usuario</button>
         </div>
 
     </div>
