@@ -1,37 +1,109 @@
 .App {
   text-align: center;
-  background-color: aquamarine;
+
 }
+html{
+  box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 /* navegation bar styles */
 #navBarLandingPage{
+display: flex;
+background-color: #02465B;
+width: 100%;
+height: 80px;
+justify-content: flex-start;
+}
+.button{
+  background-color: #72E5F2;
+  border: 2px solid;
+  border-radius: 3px;
+  width: 90px;
+  height: 40px;
+  margin: 20px;
+  font-family: 'GlacialIndifferenceRegular';
+ font-weight: normal;
+ font-style: normal;
+}
+.navbarDecoration{
+  background-color:#72E5F2;
+  height: 80px;
+  width: 30px;
+  border: 2px solid black;
+  position: relative;
+  margin-left: 20px;
+}
+#navbarDecoration2{
+  margin-right: 970px
+}
+/* main content styles */
+.logoScroll{
+  background-color: white;
+  width: 100%;
+  height: 460px;
   display: flex;
-   background-color: #02465B;
-   width: 100%;
-   height: 80px;
-   justify-content: flex-start;
-  }
-  .button{
-      background-color: #72E5F2;
-      border: 2px solid;
-      border-radius: 3px;
-      width: 90px;
-      height: 40px;
-      margin: 20px;
-      font-family: 'GlacialIndifferenceRegular';
-     font-weight: normal;
-     font-style: normal;
-  }
-  .navbarDecoration{
-      background-color:#72E5F2;
-      height: 80px;
-      width: 30px;
-      border: 2px solid black;
-      position: relative;
-      margin-left: 20px;
-  }
-  #navbarDecoration2{
-      margin-right: 970px
-  }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#sangiLogo{
+  width: 400px;
+}
+#scrollImg{
+  width: 300px;
+}
+.sangiInfo{
+  background-color: #72E5F2;
+  width: 100%;
+  height: 700px;
+}
+.infoTitle{
+  font-family: 'GlacialIndifferenceRegular';
+ font-weight: normal;
+ font-style: normal;
+ font-size: 5em;
+ display: flex;
+ justify-content: center;
+ padding-top: 60px;
+}
+
+.sangiDescription{
+  background-color: #72E5F2;
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.4em;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  overflow: auto;
+
+}
+.description{
+  background-color:  #72E5F2;
+  display: flex;
+ justify-content: center;
+}
+.infoImgSection{
+  background-color: #72E5F2;
+  width: 500px;
+  height: 400px;
+  padding: 30px;
+  display: flex;
+ justify-content: center;
+
+}
+#infoImg{
+  width: 400px;
+  height: 300px;
+}
 
 /* page footer styles */
 .pageFooter{
