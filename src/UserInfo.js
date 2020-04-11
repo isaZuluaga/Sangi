@@ -6,14 +6,34 @@ import NavBar from './Components/NavBarComponent';
 import Footer from './Components/FooterComponent';
 import Card from './Components/CardComponent';
 import equipo from './img/equipo.png';
+import axios from "axios"; // for http requests to mongo db
 
 
 class UserInfo extends Component {
+    componentDidMount() {
+        this.getEmployee();
+    }
+    getEmployee(){
+        axios({
+            url: 'http://localhost:8080/api',
+            method:'GET',
+
+        })
+        .then(resp => {
+            console.log(resp.data[1]);
+        })
+        .catch(()=>{
+            console.log('internal server error')
+        })
+
+    }
+
   render(){
+
     return (
         <div>
             <NavBar/>
-            <div class="userInfoContainer">
+            <div className="userInfoContainer">
         <img src={equipo} alt="userImg" id="userImg"></img>
         <p id="userDescription">
             INFORMACIÓN DEL USUARIO: <br></br>
