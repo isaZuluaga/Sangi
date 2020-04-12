@@ -10,6 +10,20 @@ import axios from "axios"; // for http requests to mongo db
 
 
 class UserInfo extends Component {
+        state = {
+            sangiUser:{
+                _id: "",
+                fullName: "",
+                CC: "",
+                cellphone: "",
+                address:"",
+                email: "",
+                country:"",
+                imgUrl: ""
+
+            }
+        }
+
     componentDidMount() {
         this.getEmployee();
     }
@@ -20,7 +34,11 @@ class UserInfo extends Component {
 
         })
         .then(resp => {
-            console.log(resp.data[1]);
+            console.log(resp.data[0]);
+            this.setState({
+                sangiUser: resp.data[0]
+            });
+
         })
         .catch(()=>{
             console.log('internal server error')
@@ -29,20 +47,25 @@ class UserInfo extends Component {
     }
 
   render(){
+      console.log('State: ',this.state.sangiUser._id);
 
     return (
         <div>
             <NavBar/>
             <div className="userInfoContainer">
-        <img src={equipo} alt="userImg" id="userImg"></img>
+        <img src={this.state.sangiUser.imgUrl} alt="userImg" id="userImg"></img>
         <p id="userDescription">
-            INFORMACIÓN DEL USUARIO: <br></br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ad? Illo, laborum reiciendis animi voluptates eveniet nobis.
-            Pariatur cupiditate accusamus maxime laudantium quisquam, sunt asperiores deserunt laborum possimus aperiam eius.
+            <h2>{this.state.sangiUser.fullName}</h2> <br></br>
+            <strong>Cedula:</strong>  {this.state.sangiUser.CC}<br></br>
+            <strong>Celular: </strong>  {this.state.sangiUser.cellphone}<br></br>
+            <strong>Correo:</strong>  {this.state.sangiUser.email}<br></br>
+            <strong>Pais de residencia:</strong>  {this.state.sangiUser.country}<br></br>
+            <strong>Dirección:</strong>  {this.state.sangiUser.address}<br></br>
+
         </p>
     </div>
                 <div className="grid-container">
-                <Card name='Objeto 1' />
+                <Card name='Objeto 2' />
                 <Card name='Objeto 2'/>
                 <Card name='Objeto 3'/>
                 <Card name='Objeto 4'/>
