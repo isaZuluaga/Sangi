@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 const routes = require('./routes/api');
-//sangidb2013
+
 //const MONGODB_URI = 'mongodb+srv://isaZuluaga:sangidb2013@sangicluster-0pmni.mongodb.net/test?retryWrites=true&w=majority';
 const url = 'mongodb://isaZuluaga:sangidb2013@ds155313.mlab.com:55313/sangidb'
 
@@ -33,10 +33,17 @@ mongoose.connection.on('connected', () => {
 //     email:'nLacunza@sangi.es',
 //     imgUrl:'shorturl.at/dwU48'
 // };
+// const data = {
+//          objectName: 'Guitarra Felder',
+//          userTarget: '5e921a9b08217c4aa8ab46ee',
+//          avaluo: '800000',
+//          isAvaliable: 1,
+//          objImgUrl:'https://static.turbosquid.com/Preview/2019/02/07__07_36_49/20.png3AE253C6-15AB-4908-A6D3-C1810941EC5CZoom.jpg'
+//      };
 
-//const newSangiMember = new SangiMember(data); // instance of model
+// const newSangiObject = new SangiObject(data); // instance of model
 
-// newSangiMember.save((error) => {
+// newSangiObject.save((error) => {
 // if(error){
 //     console.log('Oops something happened');
 // }else{

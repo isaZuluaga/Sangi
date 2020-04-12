@@ -5,7 +5,6 @@ import './UserInfo.css'
 import NavBar from './Components/NavBarComponent';
 import Footer from './Components/FooterComponent';
 import Card from './Components/CardComponent';
-import equipo from './img/equipo.png';
 import axios from "axios"; // for http requests to mongo db
 
 
@@ -19,24 +18,24 @@ class UserInfo extends Component {
                 address:"",
                 email: "",
                 country:"",
-                imgUrl: ""
-
+                imgUrl: "",
+                userObjects:[]
             }
         }
 
     componentDidMount() {
-        this.getEmployee();
+        this.getSangiUser();
     }
-    getEmployee(){
+    getSangiUser(){
         axios({
             url: 'http://localhost:8080/api',
             method:'GET',
 
         })
         .then(resp => {
-            console.log(resp.data[0]);
+            console.log(resp.data[1]);
             this.setState({
-                sangiUser: resp.data[0]
+                sangiUser: resp.data[1]
             });
 
         })
@@ -46,8 +45,15 @@ class UserInfo extends Component {
 
     }
 
+    displaysangiObject = (userObjects) =>{
+        if(!userObjects.length) return null;
+        return userObjects.map((userObj, index) =>(
+            <Card key={index} name={userObj.objectName} objImg={userObj.objImgUrl} avaluoTxt={userObj.avaluo} descTxt={userObj.descrp} />
+        ));
+
+    };
   render(){
-      console.log('State: ',this.state.sangiUser._id);
+      console.log('State: ',this.state.sangiUser.userObjects);
 
     return (
         <div>
@@ -65,14 +71,8 @@ class UserInfo extends Component {
         </p>
     </div>
                 <div className="grid-container">
-                <Card name='Objeto 2' />
-                <Card name='Objeto 2'/>
-                <Card name='Objeto 3'/>
-                <Card name='Objeto 4'/>
-                <Card name='Objeto 5'/>
-                <Card name='Objeto 6'/>
-                <Card name='Objeto 7'/>
-                <Card name='Objeto 8'/>
+                {this.displaysangiObject(this.state.sangiUser.userObjects)}
+
                 </div>
             <Footer/>
         </div>

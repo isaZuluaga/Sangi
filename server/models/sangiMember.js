@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 // schema
 const Schema = mongoose.Schema;
+
 const sangiMemberSchema = new Schema({
 
     fullName: String,
@@ -11,7 +12,10 @@ const sangiMemberSchema = new Schema({
     imgUrl: String
 
 });
+
+
 //model
 const SangiMember = mongoose.model('SangiMember',sangiMemberSchema);
+
 
 module.exports = SangiMember;
