@@ -10,12 +10,16 @@
 }
 
 .objectInfoBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: whitesmoke;
     border: 2px solid black;
     border-radius: 10px;
     width: 700px;
     height: 480px;
-    padding: 30px;
+    padding: 40px;
     margin: 30px;
 }
 
@@ -41,8 +45,29 @@
   .objectInfoButton:hover{
     background-color: azure;
 }
-.porposeInputText{
+#porposeInputText{
     width: 200px;
-    height: 40px;
-    
+   height: 300px;
+}
+
+.display-block {
+    display: block;
+  }
+
+  .display-none {
+    display: none;
+  }
+  .objectDesription{
+    font-size: 1.2em;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.objectNameInfo{
+    font-size: 1.6em;
+    padding: 10px;
+}
+
+.objInfoImage{
+    margin-top: 10px;
 }

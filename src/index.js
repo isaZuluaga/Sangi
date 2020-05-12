@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Page from './Components/Page'
 
 import * as serviceWorker from './serviceWorker';
 
