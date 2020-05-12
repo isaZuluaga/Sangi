@@ -4,36 +4,39 @@ import './ObjectList.css';
 import './UserInfo.css'
 import NavBar from './Components/NavBarComponent';
 import Footer from './Components/FooterComponent';
-import Card from './Components/CardComponent';
-import equipo from './img/equipo.png';
+import { PageContext } from './context/pageContext'
 
 
 class UserInfo extends Component {
   render(){
+    const { getSangiUser,displaysangiObject,sangiUser,selectedObj,showUserInfo} = this.context
+    const showHideClassName = showUserInfo ? "display-block" : "display-none";
+      console.log('State: ',sangiUser.userObjects);
+        console.log("el estado del objeto seleccionada desde user",selectedObj )
     return (
-        <div>
+        <div className={showHideClassName}>
+            {getSangiUser}
             <NavBar/>
-            <div class="userInfoContainer">
-        <img src={equipo} alt="userImg" id="userImg"></img>
+            <div className="userInfoContainer">
+        <img src={sangiUser.imgUrl} alt="userImg" id="userImg"></img>
         <p id="userDescription">
-            INFORMACIÓN DEL USUARIO: <br></br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ad? Illo, laborum reiciendis animi voluptates eveniet nobis.
-            Pariatur cupiditate accusamus maxime laudantium quisquam, sunt asperiores deserunt laborum possimus aperiam eius.
+            <h2>{sangiUser.fullName}</h2> <br></br>
+            <strong>Cedula:</strong>  {sangiUser.CC}<br></br>
+            <strong>Celular: </strong>  {sangiUser.cellphone}<br></br>
+            <strong>Correo:</strong>  {sangiUser.email}<br></br>
+            <strong>Pais de residencia:</strong>  {sangiUser.country}<br></br>
+            <strong>Dirección:</strong>  {sangiUser.address}<br></br>
+
         </p>
     </div>
                 <div className="grid-container">
-                <Card name='Objeto 1' />
-                <Card name='Objeto 2'/>
-                <Card name='Objeto 3'/>
-                <Card name='Objeto 4'/>
-                <Card name='Objeto 5'/>
-                <Card name='Objeto 6'/>
-                <Card name='Objeto 7'/>
-                <Card name='Objeto 8'/>
+                {displaysangiObject(sangiUser.userObjects)}
+
                 </div>
             <Footer/>
         </div>
     );
   }
 }
+UserInfo.contextType = PageContext
 export default UserInfo;
